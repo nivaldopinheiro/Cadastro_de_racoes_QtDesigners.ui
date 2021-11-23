@@ -1,0 +1,24 @@
+Passo 1: Baixar e instalar o SSMS - digitar no google download ssms e baixar 1º link
+Passo 2: Instalar
+Passo 3: Criar Banco de Dados, abrindo uma query e rodando:
+
+CREATE DATABASE db_MaosPorPatasSQL # Criar o BD
+
+USE db_MaosPorPatasSQL # Usar
+CREATE TABLE Doacao(
+    id_doacao int,
+    parceiro varchar(50),
+    produto varchar(50),
+    data_doacao date,
+    tipo varchar(15),
+    quantidade decimal(6, 2),
+    )
+
+Passo 5: Adicionar 1 valor exemplo:
+
+INSERT INTO Doacao(id_doacao, parceiro, produto, data_doacao, tipo, quantidade)
+VALUES
+    (1, 'Nivaldo', 'ração animal', '14/11/2021', 'A', 1) # Exemplo de dados
+
+USE db_MaosPorPatasSQL
+SELECT * FROM Doacao
